@@ -1,17 +1,21 @@
 {
   "expo": {
-    "name": "lumen",
+    "name": "Lumen",
     "slug": "lumen",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "backgroundColor": "#FBF7F0",
+    "primaryColor": "#C2562F",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lumen.fieldjournal"
     },
     "android": {
+      "package": "com.lumen.fieldjournal",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#12100E",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -19,6 +23,16 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Lumen uses the camera so you can record a new frame for the journal.",
+          "photosPermission": "Lumen uses your photo library so you can bring an existing frame into the journal."
+        }
+      ]
+    ]
   }
 }
