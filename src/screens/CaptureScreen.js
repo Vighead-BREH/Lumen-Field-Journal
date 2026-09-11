@@ -176,14 +176,6 @@ export default function CaptureScreen() {
             <Button label="Clear the roll" icon="trash-2" variant="quiet" onPress={clear} />
           </>
         ) : null}
-
-        <View style={styles.note}>
-          <Text style={styles.noteLabel}>Package in use</Text>
-          <Text style={styles.noteBody}>
-            expo-image-picker &mdash; launchCameraAsync for new frames, launchImageLibraryAsync for
-            existing ones, with the camera permission requested before the first shot.
-          </Text>
-        </View>
       </ScrollView>
     </SafeAreaView>
   );
